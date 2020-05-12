@@ -27,7 +27,7 @@
     "busyman": "^0.3.0",
     "debug": "2.x",
     "proving": "^0.1.0",
-    "q": "git+https://github.com/HalleyAssist/q-lite.git",
+    "q-lite": "git+https://github.com/HalleyAssist/q-lite.git",
     "zcl-id": "git+https://github.com/HalleyAssist/zcl-id.git",
     "zcl-packet": "git+https://github.com/HalleyAssist/zcl-packet.git",
     "zstack-common": "git+https://github.com/HalleyAssist/zstack-common.git"
