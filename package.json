@@ -15,17 +15,16 @@
     "cc253x"
   ],
   "author": "Jack Wu <jackchased@gmail.com>",
-  "contributors": [
-  ],
+  "contributors": [],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/HalleyAssist/zstack-af/issues"
   },
   "homepage": "https://github.com/HalleyAssist/zstack-af#readme",
   "dependencies": {
-    "areq": "git+https://github.com/HalleyAssist/areq.git",
     "busyman": "^0.3.0",
     "debug": "2.x",
+    "eventemitter2": "^6.4.3",
     "proving": "^0.1.0",
     "q-lite": "git+https://github.com/HalleyAssist/q-lite.git",
     "zcl-id": "git+https://github.com/HalleyAssist/zcl-id.git",
@@ -35,7 +34,7 @@
     "chai": "^4.0.0",
     "mocha": "^6.2.1",
     "sinon": "^6.3",
-    "sinon-test": "^2.3.0",
-    "sinon-chai": "^3.2.0"
+    "sinon-chai": "^3.2.0",
+    "sinon-test": "^2.3.0"
   }
 }
