@@ -24,7 +24,7 @@
   "dependencies": {
     "busyman": "^0.3.0",
     "debug": "2.x",
-    "eventemitter2": "^6.4.3",
+    "eventemitter2": "git+https://github.com/HalleyAssist/EventEmitter2.git",
     "proving": "^0.1.0",
     "q-lite": "git+https://github.com/HalleyAssist/q-lite.git",
     "zcl-id": "git+https://github.com/HalleyAssist/zcl-id.git",
