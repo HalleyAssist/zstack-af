@@ -4,7 +4,7 @@
   "description": "An open source ZigBee gateway solution with node.js.",
   "main": "index.js",
   "scripts": {
-    "test": "make test-all"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
     "chai": "^4.0.0",
     "chance": "^1.1.9",
     "eslint": "^7.12.0",
-    "mocha": "^6.2.1",
+    "mocha": "^6.2.3",
     "sinon": "^6.3",
     "sinon-chai": "^3.2.0",
     "sinon-test": "^2.3.0"
