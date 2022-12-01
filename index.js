@@ -3,5 +3,7 @@
 const AfController = require('./lib/afController.js')
 const Af = require('./lib/af.js')
 const AfError = require('./lib/afError')
+const Packet = require('./lib/packet')
+const Ota = require('./lib/Ota')
 
-module.exports = {AfController, Af, AfError}
+module.exports = {AfController, Af, AfError, Packet, Ota}
