@@ -129,6 +129,16 @@
 		}
 	},
 	"functional": {
+		"manuSpecificTuya": {
+			"dataReport": {
+				"params": [
+					["seq", 1],
+					["dpValues", 28]
+				],
+				"knownBufLen": 2,
+				"dir": 1
+			}
+		},
 		"zeaker": {
 			"speak": {
 				"params": [
