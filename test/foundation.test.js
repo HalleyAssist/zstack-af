@@ -1,9 +1,7 @@
 var expect = require('chai').expect,
-    zclId = require('zcl-id'),
-    _ = require('busyman');
+    zclId = require('zcl-id')
 
-var zclmeta = require('../lib/packet/zclmeta'),
-    FoundClass = require('../lib/packet/foundation');
+var FoundClass = require('../lib/packet/Foundation');
 
 var foundCmd = [],
     k;

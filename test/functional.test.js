@@ -3,8 +3,8 @@ var expect = require('chai').expect,
     chance = new Chance(),
     zclId = require('zcl-id');
 
-var zclmeta = require('../lib/packet/zclmeta'),
-    FuncClass = require('../lib/packet/functional');
+var zclmeta = require('../lib/packet/ZclMeta'),
+    FuncClass = require('../lib/packet/Functional');
 
 var clusterIds = [],
     k;

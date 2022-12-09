@@ -1,5 +1,5 @@
 var expect = require('chai').expect,
-    zcl = require('../lib/packet');
+    zcl = require('../lib/Packet');
 
 describe('APIs Arguments Check for Throwing Error', function() {
     describe('#.frame', function() {
