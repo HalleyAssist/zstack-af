@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install modules
       run: |
-        sudo npm install -g eslint
+        sudo npm install -g eslint@8
         npm install
     - run: eslint lib --ext .js,.jsx,.ts,.tsx
     - run: npm test
