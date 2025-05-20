@@ -1,12 +1,12 @@
-var expect = require('chai').expect,
+let expect = require('chai').expect,
     Chance = require('chance'),
     chance = new Chance(),
     zclId = require('zcl-id');
 
-var zclmeta = require('../lib/packet/ZclMeta'),
+let zclmeta = require('../lib/packet/ZclMeta'),
     FuncClass = require('../lib/packet/Functional');
 
-var clusterIds = [],
+let clusterIds = [],
     k;
 
 for (k in zclId._common.clusterId) {
@@ -15,7 +15,7 @@ for (k in zclId._common.clusterId) {
 
 describe('Functional Cmd framer and parser Check', function() {
     clusterIds.forEach(function (cluster) {
-        var cInfo = zclId._getCluster(cluster),
+        let cInfo = zclId._getCluster(cluster),
             cmdIds = [];
 
         if (!cInfo || !cInfo.cmd) return;
@@ -25,7 +25,7 @@ describe('Functional Cmd framer and parser Check', function() {
         });
 
         cmdIds.forEach(function (cmd) {
-            var funcObj,
+            let funcObj,
                 payload
 
             let meta = zclmeta.functional.get(cluster, cmd)
@@ -57,7 +57,7 @@ describe('Functional Cmd framer and parser Check', function() {
 
 describe('Functional CmdRsp framer and parser Check', function() {
     clusterIds.forEach(function (cluster) {
-        var cInfo = zclId._getCluster(cluster),
+        let cInfo = zclId._getCluster(cluster),
             cmdRspIds = [];
 
         if (!cInfo || !cInfo.cmdRsp) return;
@@ -67,7 +67,7 @@ describe('Functional CmdRsp framer and parser Check', function() {
         });
 
         cmdRspIds.forEach(function (cmdRsp) {
-            var funcObj,
+            let funcObj,
                 payload
 
             let meta = zclmeta.functional.get(cluster, cmdRsp);
@@ -94,7 +94,7 @@ describe('Functional CmdRsp framer and parser Check', function() {
 });
 
 function randomArg(type) {
-    var testBuf,
+    let testBuf,
         testArr,
         k;
 
@@ -116,7 +116,7 @@ function randomArg(type) {
         case 'longaddr':
             return '00124b00019c2ee9';
         case 'stringPreLen':
-            var stringLen = chance.integer({min: 0, max: 255});
+            let stringLen = chance.integer({min: 0, max: 255});
             return chance.string({length: stringLen});
         case 'preLenUint8':
         case 'preLenUint16':

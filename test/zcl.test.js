@@ -1,9 +1,9 @@
-var expect = require('chai').expect,
+let expect = require('chai').expect,
     zcl = require('../lib/Packet');
 
 describe('APIs Arguments Check for Throwing Error', function() {
     describe('#.frame', function() {
-        var frameCntl = {frameType:1, manufSpec: 0, direction: 0, disDefaultRsp: 1};
+        let frameCntl = {frameType:1, manufSpec: 0, direction: 0, disDefaultRsp: 1};
 
         it('should be a function', function () {
             expect(zcl.frame).to.be.a('function');
@@ -79,7 +79,7 @@ describe('APIs Arguments Check for Throwing Error', function() {
     });
 
     describe('#.parse', function() {
-        var zclBuf = new Buffer([0x11, 0x00, 0x02]);
+        let zclBuf = new Buffer([0x11, 0x00, 0x02]);
 
         it('should be a function', function () {
             expect(zcl.parse).to.be.a('function');
@@ -128,7 +128,7 @@ describe('APIs Arguments Check for Throwing Error', function() {
 
 describe('Module Methods Check', function() {
     describe('zcl foundation #.frame and #.parse Check', function () {
-        var zclFrames = [
+        let zclFrames = [
                 {
                     frameCntl: {
                         frameType: 0,
@@ -180,7 +180,7 @@ describe('Module Methods Check', function() {
             ];
 
         zclFrames.forEach(function(zclFrame) {
-            var zBuf;
+            let zBuf;
 
             it('zcl foundation framer and parser Check', function () {
                 zBuf = zcl.frame(zclFrame.frameCntl, zclFrame.manufCode, zclFrame.seqNum, zclFrame.cmdId, zclFrame.payload);
@@ -191,7 +191,7 @@ describe('Module Methods Check', function() {
     });
 
     describe('zcl functional #.frame and #.parse Check', function () {
-      var zclFrames = [
+      let zclFrames = [
             {
                 frameCntl: {
                     frameType: 1,
@@ -248,7 +248,7 @@ describe('Module Methods Check', function() {
         ];
 
         zclFrames.forEach(function(zclFrame) {
-            var zBuf;
+            let zBuf;
 
             it('zcl functional framer and parser Check', function () {
                 zBuf = zcl.frame(zclFrame.frameCntl, zclFrame.manufCode, zclFrame.seqNum, zclFrame.cmdId, zclFrame.payload, 0x0005);
@@ -264,7 +264,7 @@ describe('Module Methods Check', function() {
     });
 
     describe('zcl #.header Check', function () {
-        var headers = [
+        let headers = [
             {
                 buf: new Buffer([ 0x00, 0x00, 0x00 ]),
                 obj: {
@@ -286,7 +286,7 @@ describe('Module Methods Check', function() {
         ];
 
         headers.forEach(function (header) {
-            var result = zcl.header(header.buf);
+            let result = zcl.header(header.buf);
 
             it('zcl header Check', function () {
                 expect(result).to.eql(header.obj);

@@ -1,16 +1,16 @@
-var expect = require('chai').expect,
+let expect = require('chai').expect,
     zclId = require('zcl-id')
 
-var FoundClass = require('../lib/packet/Foundation');
+let FoundClass = require('../lib/packet/Foundation');
 
-var foundCmd = [],
+let foundCmd = [],
     k;
 
 for (k in zclId._common.foundation) {
     foundCmd.push(k);
 }
 
-var valObj = {
+let valObj = {
         read: [
             { attrId: 0x1111 }, { attrId: 0x2222 }, { attrId: 0x3333 }
         ],
