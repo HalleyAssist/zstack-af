@@ -27,8 +27,7 @@
     "debug": "2.x",
     "eventemitter2": "git+https://github.com/HalleyAssist/EventEmitter2.git",
     "proving": "^0.1.0",
-    "zcl-id": "git+https://github.com/HalleyAssist/zcl-id.git",
-    "zcl-packet": "git+https://github.com/HalleyAssist/zcl-packet.git"
+    "zcl-id": "git+https://github.com/HalleyAssist/zcl-id.git"
   },
   "devDependencies": {
     "chai": "^4.0.0",
