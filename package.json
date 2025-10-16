@@ -25,7 +25,6 @@
     "@halleyassist/q-lite": "^0.9.6",
     "busyman": "^0.3.0",
     "debug": "2.x",
-    "eventemitter2": "git+https://github.com/HalleyAssist/EventEmitter2.git",
     "proving": "^0.1.0",
     "zcl-id": "git+https://github.com/HalleyAssist/zcl-id.git"
   },
