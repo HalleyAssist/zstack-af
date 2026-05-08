@@ -13,3 +13,5 @@ jobs:
         npm install
     - run: eslint lib --ext .js,.jsx,.ts,.tsx
     - run: npm test
+    - name: Perform type checking
+      run: npm run typecheck

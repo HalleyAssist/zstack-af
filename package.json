@@ -3,7 +3,9 @@
   "version": "0.3.0",
   "description": "An open source ZigBee gateway solution with node.js.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
+    "typecheck": "npx tsc -p tsconfig.checkjs.json",
     "test": "./node_modules/.bin/mocha"
   },
   "repository": {
@@ -29,12 +31,14 @@
     "zcl-id": "git+https://github.com/HalleyAssist/zcl-id.git"
   },
   "devDependencies": {
+    "@types/node": "^22.19.18",
     "chai": "^4.0.0",
     "chance": "^1.1.9",
     "eslint": "^7.12.0",
     "mocha": "^6.2.3",
     "sinon": "^6.3",
     "sinon-chai": "^3.2.0",
-    "sinon-test": "^2.3.0"
+    "sinon-test": "^2.3.0",
+    "typescript": "^6.0.3"
   }
 }
