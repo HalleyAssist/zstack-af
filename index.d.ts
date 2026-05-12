@@ -87,6 +87,11 @@ export class AfController extends EventEmitterWithWaitFor {
     ): Promise<any>;
 }
 
+export class MsgHandler {
+    evt: string;
+    hdlr: string;
+}
+
 // ---------------------------------------------------------------------------
 // Af
 // ---------------------------------------------------------------------------
@@ -104,6 +109,8 @@ export class Af extends EventEmitterWithWaitFor {
     maxTransactions: number;
     /** QoS execution wrapper. */
     qos: AfQos;
+
+    static msgHandlers: MsgHandler[];
 
     constructor(controller: any, qos?: AfQos | null);
 
